@@ -10,7 +10,6 @@
 		74FDA2D329C96AA500534C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDA2D229C96AA500534C9E /* AppDelegate.swift */; };
 		74FDA2D529C96AA500534C9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDA2D429C96AA500534C9E /* SceneDelegate.swift */; };
 		74FDA2D729C96AA500534C9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDA2D629C96AA500534C9E /* ViewController.swift */; };
-		74FDA2DA29C96AA500534C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FDA2D829C96AA500534C9E /* Main.storyboard */; };
 		74FDA2DC29C96AA600534C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FDA2DB29C96AA600534C9E /* Assets.xcassets */; };
 		74FDA2DF29C96AA600534C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FDA2DD29C96AA600534C9E /* LaunchScreen.storyboard */; };
 		74FDA2EA29C96AA600534C9E /* Spotify_CloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FDA2E929C96AA600534C9E /* Spotify_CloneTests.swift */; };
@@ -40,7 +39,6 @@
 		74FDA2D229C96AA500534C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74FDA2D429C96AA500534C9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		74FDA2D629C96AA500534C9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		74FDA2D929C96AA500534C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74FDA2DB29C96AA600534C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74FDA2DE29C96AA600534C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74FDA2E029C96AA600534C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,12 +97,12 @@
 		74FDA2D129C96AA500534C9E /* Spotify Clone */ = {
 			isa = PBXGroup;
 			children = (
-				74FDA2D229C96AA500534C9E /* AppDelegate.swift */,
-				74FDA2D429C96AA500534C9E /* SceneDelegate.swift */,
-				74FDA2D629C96AA500534C9E /* ViewController.swift */,
-				74FDA2D829C96AA500534C9E /* Main.storyboard */,
-				74FDA2DB29C96AA600534C9E /* Assets.xcassets */,
-				74FDA2DD29C96AA600534C9E /* LaunchScreen.storyboard */,
+				74FDA30829C96B5300534C9E /* Resources */,
+				74FDA30729C96B4100534C9E /* Managers */,
+				74FDA30629C96B3400534C9E /* viewModels */,
+				74FDA30429C96B0800534C9E /* Models */,
+				74FDA30329C96AFC00534C9E /* Views */,
+				74FDA30229C96AEB00534C9E /* Controller */,
 				74FDA2E029C96AA600534C9E /* Info.plist */,
 			);
 			path = "Spotify Clone";
@@ -125,6 +123,53 @@
 				74FDA2F529C96AA600534C9E /* Spotify_CloneUITestsLaunchTests.swift */,
 			);
 			path = "Spotify CloneUITests";
+			sourceTree = "<group>";
+		};
+		74FDA30229C96AEB00534C9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74FDA2D629C96AA500534C9E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		74FDA30329C96AFC00534C9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74FDA2DD29C96AA600534C9E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74FDA30429C96B0800534C9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74FDA30629C96B3400534C9E /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		74FDA30729C96B4100534C9E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		74FDA30829C96B5300534C9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74FDA2DB29C96AA600534C9E /* Assets.xcassets */,
+				74FDA2D229C96AA500534C9E /* AppDelegate.swift */,
+				74FDA2D429C96AA500534C9E /* SceneDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +278,6 @@
 			files = (
 				74FDA2DF29C96AA600534C9E /* LaunchScreen.storyboard in Resources */,
 				74FDA2DC29C96AA600534C9E /* Assets.xcassets in Resources */,
-				74FDA2DA29C96AA500534C9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		74FDA2D829C96AA500534C9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74FDA2D929C96AA500534C9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		74FDA2DD29C96AA600534C9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
