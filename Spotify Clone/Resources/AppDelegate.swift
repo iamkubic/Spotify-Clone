@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         
         window.makeKeyAndVisible()
-        window.rootViewController = ViewController()
+        window.rootViewController = TabBarViewController()
         self.window = window
         
         return true
